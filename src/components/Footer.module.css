@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: #a2a2a2;
+    padding: 30px 0 30px 0;
+}
+
+.footer span {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    flex-basis: 65%;
+    margin-left: 100px;
+    color: white;
+}
+
+
+.footer a {
+    margin-right: 40px;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+   
+    text-decoration: none;
+    border-radius: 50%;
+}

@@ -1,0 +1,88 @@
+.container{
+    align-items: center;
+    text-align: center;
+    background-image:'https:unsplash.com/photos/naFHFLV5cqU';
+}
+
+.upperSec {
+    background-color: rgb(146, 137, 137); 
+    font-weight: bold;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.upperSec h1{
+    padding-bottom: 20px;
+    font-size: 80px;
+}
+
+.latestBtn {
+    display: block;
+    border: 1px solid #56CCF2;
+    padding: 15px 40px;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px auto;
+    background: inherit;
+    cursor: pointer;
+    color: white;
+    /* padding-bottom: 10px; */
+}
+.playBtn {
+    cursor: pointer;
+    display: block;
+    border: 2px solid #56CCF2;
+    border-radius: 50%;
+    /* padding: 5px; */
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 10px auto;
+    background: inherit;
+    color: #56CCF2;
+    width: 6%;
+    /* height: 8%; */
+    margin-top: 3%;
+
+}
+
+.lowerSec {
+    margin: 1% 20%;
+    text-align: center;
+
+
+}
+
+.lowerSec div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.date {
+    text-align: center;
+}
+
+.city {
+    text-align: left;
+    width: 25%;
+    color: #777;
+}
+
+.theater {
+    text-align: left;
+    float: inline-start;
+    width: 25%;
+    color: #777;
+}
+
+.lowerSec button {
+    width: 20%;
+    background: #56CCF2;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,28 @@
+.card {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 1rem;
+    width: 100%;
+    align-items: center !important;
+    padding-left: 12% !important;
+
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mt-3 {
+    align-items: center;
+    text-align: center !important;
+}
+
+.img {
+    padding: 0.5rem;
+    transition: ease-in 0.5s;
+    overflow: hidden;
+}
+.img:hover{
+  overflow: hidden;  
+}
