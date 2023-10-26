@@ -25,10 +25,10 @@ const AuthForm = () => {
     setloading(true);
     if (isloggin) {
       authurl =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCnFkm3QUNpHzskB0kG02tbilsUExeKDno";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyABXkXXXIAvM7L6AZX5G4LLoJ2HLvjV8N0";
     } else {
       authurl =
-        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCnFkm3QUNpHzskB0kG02tbilsUExeKDno";
+        "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyABXkXXXIAvM7L6AZX5G4LLoJ2HLvjV8N0";
     }
     let res = await fetch(authurl, {
       method: "POST",
