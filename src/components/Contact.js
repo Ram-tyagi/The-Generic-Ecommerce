@@ -16,7 +16,7 @@ const ContactUs = () => {
           };
 
           const response = fetch(
-            "https://newcontact-da682-default-rtdb.firebaseio.com/user.json",
+            "https://the-generic-ecom-default-rtdb.firebaseio.com/user.json",
             {
               method: "POST",
               body: JSON.stringify(userData),

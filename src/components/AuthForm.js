@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
 import CreateContext from "../store/create-context";
 import { useHistory } from "react-router-dom";
+import classes from "./AuthForm.module.css";
 
 const AuthForm = () => {
   const history = useHistory();
@@ -58,7 +59,7 @@ const AuthForm = () => {
 
   return (
     <>
-      <section>
+      <section className={classes.auth}>
         {err ? (
           <div>
             <Alert key={"danger"} variant={"danger"}>
@@ -66,8 +67,8 @@ const AuthForm = () => {
             </Alert>
           </div>
         ) : null}
-        <div>
-          <h2>{isloggin ? "Login" : "Signup"}</h2>
+        <div className={classes.control}>
+          <h2 style={{color:"white"}}>{isloggin ? "Login" : "Signup"}</h2>
           <Form  onSubmit={userAuthntication}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email Id</Form.Label>
@@ -93,13 +94,13 @@ const AuthForm = () => {
             </Form.Group>
             {loading && <p>Sending request...</p>}
             {!loading && (
-              <Button variant="primary" type="submit">
+              <Button className={classes.actions} variant="primary" type="submit">
                 {isloggin ? "Login" : "Signup"}
               </Button>
             )}
           </Form>
           <div >
-            <Button variant="primary" type="submit" onClick={changeLogginFun}>
+            <Button  className={classes.actions} variant="primary" type="submit" onClick={changeLogginFun}>
               {isloggin ? "Go to signup page" : "Go to loggin page"}
             </Button>
           </div>
